@@ -41,17 +41,17 @@
                 android:layout_centerVertical="true"
                 app:srcCompat="@drawable/check_box"
                 app:tint="@color/green" />
+
             <TextView
                 android:id="@+id/text_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/checkImage"
                 android:layout_centerVertical="true"
-                android:textSize="15sp"
                 android:layout_marginStart="10px"
+                android:layout_toEndOf="@+id/checkImage"
                 android:text="Android"
                 android:textColor="@color/green"
-                />
+                android:textSize="15sp" />
         </RelativeLayout>
     </RelativeLayout>
     <View
