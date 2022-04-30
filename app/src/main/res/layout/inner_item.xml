@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/center_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/relative_two"
+            android:layout_centerVertical="true"
+            android:text="Android"
+            android:textSize="15sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relative_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:background="@drawable/check_green_bg"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/checkImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/check_box"
+                app:tint="@color/green" />
+            <TextView
+                android:id="@+id/text_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/checkImage"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:layout_marginStart="10px"
+                android:text="Android"
+                android:textColor="@color/green"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/center_relative"
+        android:layout_marginTop="10dp"
+        android:background="#E8E7E7" />
+
+
+</RelativeLayout>
