@@ -11,26 +11,27 @@
         android:id="@+id/center_relative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/text_one"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_toStartOf="@+id/relative_two"
             android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/relative_two"
             android:text="Android"
-            android:textSize="15sp"
-            />
+            android:textSize="15sp" />
 
         <RelativeLayout
             android:id="@+id/relative_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:padding="5dp"
             android:background="@drawable/check_green_bg"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             >
 
             <ImageView
@@ -40,7 +41,8 @@
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 app:srcCompat="@drawable/check_box"
-                app:tint="@color/green" />
+                app:tint="@color/green"
+                />
 
             <TextView
                 android:id="@+id/text_two"

@@ -1,20 +1,13 @@
-package com.application.practice.services;
+package com.application.practice.mvvmDemo.services;
 
 /*
  * Created by Charles Raj I on 2022.
  *  @author Charles Raj I
  */
 
-import android.content.Context;
-import android.content.Intent;
-import android.text.TextUtils;
-import android.widget.Toast;
-
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
-import okhttp3.Request;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;

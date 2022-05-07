@@ -1,4 +1,4 @@
-package com.application.practice.viewmodel;
+package com.application.practice.mvvmDemo.viewmodel;
 
 import android.app.Application;
 
@@ -6,10 +6,10 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
-import com.application.practice.model.DataResponse;
-import com.application.practice.services.DisposableManager;
-import com.application.practice.services.RetrofitClient;
-import com.application.practice.services.RetrofitInterface;
+import com.application.practice.mvvmDemo.model.DataResponse;
+import com.application.practice.mvvmDemo.services.DisposableManager;
+import com.application.practice.mvvmDemo.services.RetrofitClient;
+import com.application.practice.mvvmDemo.services.RetrofitInterface;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;

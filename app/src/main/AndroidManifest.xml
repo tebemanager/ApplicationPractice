@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApplicationPractice">
         <activity
-            android:name=".view.MainActivity"
+            android:name=".BaseActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".coinToss.PractiseActivity"/>
+        <activity android:name=".mvvmDemo.view.MainActivity"/>
+
     </application>
 
 </manifest>

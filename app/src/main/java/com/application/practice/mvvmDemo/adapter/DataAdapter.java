@@ -1,4 +1,4 @@
-package com.application.practice.adapter;
+package com.application.practice.mvvmDemo.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.application.practice.databinding.DataCardBinding;
-import com.application.practice.model.DataResponse;
-import com.application.practice.model.HealthItem;
+import com.application.practice.mvvmDemo.model.DataResponse;
+import com.application.practice.mvvmDemo.model.HealthItem;
 
 /**
  * Created by Charles Raj I on 30/04/22.

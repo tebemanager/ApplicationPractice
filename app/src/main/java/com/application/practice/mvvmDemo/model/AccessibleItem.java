@@ -1,4 +1,4 @@
-package com.application.practice.model;
+package com.application.practice.mvvmDemo.model;
 
 public class AccessibleItem{
 	private boolean success;

@@ -1,4 +1,4 @@
-package com.application.practice.view;
+package com.application.practice.mvvmDemo.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.LifecycleOwner;
@@ -12,10 +12,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.View;
 
-import com.application.practice.adapter.DataAdapter;
+import com.application.practice.mvvmDemo.adapter.DataAdapter;
 import com.application.practice.databinding.ActivityMainBinding;
-import com.application.practice.model.DataResponse;
-import com.application.practice.viewmodel.MainActivityViewModel;
+import com.application.practice.mvvmDemo.model.DataResponse;
+import com.application.practice.mvvmDemo.viewmodel.MainActivityViewModel;
 
 public class MainActivity extends AppCompatActivity implements LifecycleOwner{
 

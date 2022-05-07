@@ -1,4 +1,4 @@
-package com.application.practice.services;
+package com.application.practice.mvvmDemo.services;
 
 
 /*
@@ -6,7 +6,7 @@ package com.application.practice.services;
  *  @author Charles Raj I
  */
 
-import com.application.practice.model.DataResponse;
+import com.application.practice.mvvmDemo.model.DataResponse;
 
 
 import io.reactivex.Observable;

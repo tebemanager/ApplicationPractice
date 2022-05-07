@@ -1,4 +1,4 @@
-package com.application.practice.adapter;
+package com.application.practice.mvvmDemo.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.application.practice.R;
 import com.application.practice.databinding.InnerItemBinding;
-import com.application.practice.model.AccessibleItem;
+import com.application.practice.mvvmDemo.model.AccessibleItem;
 
 import java.util.List;
 

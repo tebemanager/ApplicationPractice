@@ -1,4 +1,4 @@
-package com.application.practice.model;
+package com.application.practice.mvvmDemo.model;
 
 import java.util.List;
 

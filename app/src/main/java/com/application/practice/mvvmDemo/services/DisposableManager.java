@@ -1,4 +1,4 @@
-package com.application.practice.services;
+package com.application.practice.mvvmDemo.services;
 
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
