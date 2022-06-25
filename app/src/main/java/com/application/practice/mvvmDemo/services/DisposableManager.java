@@ -10,6 +10,9 @@ public class DisposableManager {
     public static void add(Disposable disposable) {
         getCompositeDisposable().add(disposable);
     }
+    public static void addAll(Disposable... subscribe){
+        getCompositeDisposable().addAll(subscribe);
+    }
 
     public static void dispose() {
         getCompositeDisposable().dispose();

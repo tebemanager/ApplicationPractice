@@ -11,8 +11,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:padding="10dp"
         >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mvvmDemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:elevation="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MVVM Demo"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:padding="10dp"
+                />
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/coinToss"
             android:layout_width="match_parent"
@@ -24,6 +41,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Coin Toss"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:padding="10dp"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bottomNavOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:elevation="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bottom Navigation One"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:padding="10dp"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sha_256"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:elevation="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sha 256"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:padding="10dp"

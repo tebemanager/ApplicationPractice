@@ -11,8 +11,13 @@ import com.application.practice.mvvmDemo.services.DisposableManager;
 import com.application.practice.mvvmDemo.services.RetrofitClient;
 import com.application.practice.mvvmDemo.services.RetrofitInterface;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
+import io.reactivex.subjects.PublishSubject;
 
 /**
  * Created by Charles Raj I on 30/04/22.
@@ -43,6 +48,20 @@ public class MainActivityViewModel extends AndroidViewModel {
                 .subscribe(dataResponse -> {
                     dataResponseMutableLiveData.setValue(dataResponse);
                 }));
+    }
+
+
+    public Observable<List<String >> getAllValues(){
+
+        PublishSubject<List<String>> subject = PublishSubject.create();
+
+        List<String > list = new ArrayList<>();
+
+        list.add("One");
+
+        subject.onNext(list);
+
+        return subject;
     }
 
 }

@@ -20,8 +20,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".coinToss.PractiseActivity"/>
         <activity android:name=".mvvmDemo.view.MainActivity"/>
+        <activity android:name=".coinToss.PractiseActivity"/>
+        <activity android:name=".bottomNavigationOne.BottomNavOne"/>
+        <activity android:name=".sha_256.Sha_256"/>
 
     </application>
 
