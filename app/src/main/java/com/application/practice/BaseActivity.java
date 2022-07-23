@@ -3,7 +3,6 @@ package com.application.practice;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +12,7 @@ import com.application.practice.coinToss.PractiseActivity;
 import com.application.practice.databinding.BaseActivityBinding;
 import com.application.practice.mvvmDemo.view.MainActivity;
 import com.application.practice.sha_256.Sha_256;
+import com.application.practice.xml_pdf.XmlToPdf;
 
 /**
  * Created by Charles Raj I on 07/05/22.
@@ -50,6 +50,11 @@ public class BaseActivity extends AppCompatActivity {
             Intent bottomOne = new Intent(activity, Sha_256.class);
             startActivity(bottomOne);
         });
+        baseActivityBinding.xmlPdf.setOnClickListener(view -> {
+            Intent xmlPdfIntent = new Intent(activity, XmlToPdf.class);
+            startActivity(xmlPdfIntent);
+        });
+
 
     }
 }

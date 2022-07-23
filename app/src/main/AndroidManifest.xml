@@ -3,6 +3,10 @@
     package="com.application.practice">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,6 +28,7 @@
         <activity android:name=".coinToss.PractiseActivity"/>
         <activity android:name=".bottomNavigationOne.BottomNavOne"/>
         <activity android:name=".sha_256.Sha_256"/>
+        <activity android:name=".xml_pdf.XmlToPdf"/>
 
     </application>
 

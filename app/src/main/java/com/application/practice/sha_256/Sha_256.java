@@ -1,5 +1,6 @@
 package com.application.practice.sha_256;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -31,6 +32,8 @@ public class Sha_256 extends AppCompatActivity {
             sha256LayoutBinding.shaOutput.setText(value);
         });
 
+        
+
 
     }
 
@@ -44,15 +47,15 @@ public class Sha_256 extends AppCompatActivity {
             shaData = messageDigest.digest(data.getBytes());
             Log.d("TAG", "generateHashString: --- " + shaData);
 
-//            StringBuilder hexString = new StringBuilder(2 * shaData.length);
+            StringBuilder hexString = new StringBuilder(2 * shaData.length);
             for (byte shaDatum : shaData){
-                stringBuilder.append(Integer.toString((shaDatum & 0xff) + 0x100, 16 ));
-//                String hex = Integer.toHexString(0xff & shaDatum);
-//                if (hex.length() == 1){
-//                    hexString.append("0");
-//                }
-//                hexString.append(hex);
-//                stringBuilder = hexString;
+//                stringBuilder.append(Integer.toString((shaDatum & 0xff) + 0x100, 16 ));
+                String hex = Integer.toHexString(0xff & shaDatum);
+                if (hex.length() == 1){
+                    hexString.append("0");
+                }
+                hexString.append(hex);
+                stringBuilder = hexString;
             }
         }catch (Exception e){
             e.printStackTrace();
