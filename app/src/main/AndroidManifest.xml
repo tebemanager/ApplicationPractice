@@ -29,6 +29,8 @@
         <activity android:name=".bottomNavigationOne.BottomNavOne"/>
         <activity android:name=".sha_256.Sha_256"/>
         <activity android:name=".xml_pdf.XmlToPdf"/>
+        <activity android:name=".databinding_Sqlite.addUser.AddUserDetailsActivity"/>
+        <activity android:name=".xlsExport.XlsExportActivity"/>
 
     </application>
 

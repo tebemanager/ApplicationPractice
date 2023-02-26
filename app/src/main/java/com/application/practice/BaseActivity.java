@@ -10,8 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.application.practice.bottomNavigationOne.BottomNavOne;
 import com.application.practice.coinToss.PractiseActivity;
 import com.application.practice.databinding.BaseActivityBinding;
+import com.application.practice.databinding_Sqlite.addUser.AddUserDetailsActivity;
 import com.application.practice.mvvmDemo.view.MainActivity;
 import com.application.practice.sha_256.Sha_256;
+import com.application.practice.xlsExport.XlsExportActivity;
 import com.application.practice.xml_pdf.XmlToPdf;
 
 /**
@@ -54,7 +56,15 @@ public class BaseActivity extends AppCompatActivity {
             Intent xmlPdfIntent = new Intent(activity, XmlToPdf.class);
             startActivity(xmlPdfIntent);
         });
+        baseActivityBinding.sqlDatabindingRxjava.setOnClickListener(view -> {
+            Intent sqliteDataBinding = new Intent(activity, AddUserDetailsActivity.class);
+            startActivity(sqliteDataBinding);
+        });
 
+        baseActivityBinding.xlsExport.setOnClickListener(view -> {
+            Intent xlsIntent = new Intent(activity, XlsExportActivity.class);
+            startActivity(xlsIntent);
+        });
 
     }
 }

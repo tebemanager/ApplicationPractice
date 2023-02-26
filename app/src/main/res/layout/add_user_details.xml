@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--the <layout> tag is for databinding we are going to use
+databinding here so we need to add layout tag here . you'll understand all those thing from the
+future videos.-->
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <!--We can't add the hint directly here... so lets add this hint from
+            @String file..-->
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/app_name"
+                />
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/age"
+                />
+            <EditText
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/gender"
+                />
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/height"
+                />
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/weight"
+                />
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dob"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+<!--This is a simple layout lets enable this in mail activity-->

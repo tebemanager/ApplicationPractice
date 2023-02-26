@@ -19,14 +19,15 @@ import com.application.practice.databinding.XmlPdfBinding;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.nio.file.DirectoryIteratorException;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by Charles Raj I on 23/07/22.
  *
  * @author Charles Raj I
  */
-public class XmlToPdf extends AppCompatActivity {
+public class XmlToPdf extends AppCompatActivity  {
 
 
     // using view binding so i'm implemnt ing the layout like this.
@@ -49,9 +50,13 @@ public class XmlToPdf extends AppCompatActivity {
         });
 
         xmlPdfBinding.openPDf.setOnClickListener(view -> {
+
             OpenCreatedFile();
         });
     }
+
+
+
     /* This method is use to convert the view to bitmap
     * In bitmap we need to provide HEIGHT, WIDTH, COLOR ALOGRITHM
     * params @v = View, @Width = width of the pdf view @height = height of the pdf view
@@ -65,7 +70,7 @@ public class XmlToPdf extends AppCompatActivity {
     }
 
 
-    /*Lets start creating the pad using this function
+    /*Lets start creating the pdf using this function
     * @params  @bitmap= Bitmap
     * */
     public void createPdf(Bitmap bitmap){
@@ -109,13 +114,12 @@ public class XmlToPdf extends AppCompatActivity {
             Log.d("TAG", "createPdf: " + e.getMessage());
         }
     }
-
+    /* To get the file path to store the pdf file
+    * */
     public FileOutputStream getFileName(){
         File pdfDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)+ "/PDF");
         if (!pdfDir.exists()) pdfDir.mkdir();
-
         File myPath = new File(pdfDir, "cmlPdf" + ".pdf");
-
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream(myPath);
@@ -128,9 +132,7 @@ public class XmlToPdf extends AppCompatActivity {
     public void OpenCreatedFile(){
         File pdfDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)+ "/PDF");
         if (!pdfDir.exists()) pdfDir.mkdir();
-
         File myPath = new File(pdfDir, "cmlPdf" + ".pdf");
-
         if (myPath.exists()){
             Intent intent = new Intent();
             intent.setAction(Intent.ACTION_VIEW);
