@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.application.practice">
+    package="com.application.practices">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApplicationPractice">
         <activity
-            android:name=".BaseActivity"
+            android:name="com.application.practices.BaseActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,13 +24,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".mvvmDemo.view.MainActivity"/>
-        <activity android:name=".coinToss.PractiseActivity"/>
-        <activity android:name=".bottomNavigationOne.BottomNavOne"/>
-        <activity android:name=".sha_256.Sha_256"/>
-        <activity android:name=".xml_pdf.XmlToPdf"/>
-        <activity android:name=".databinding_Sqlite.addUser.AddUserDetailsActivity"/>
-        <activity android:name=".xlsExport.XlsExportActivity"/>
+        <activity android:name="com.application.practices.mvvmDemo.view.MainActivity"/>
+        <activity android:name="com.application.practices.coinToss.PractiseActivity"/>
+        <activity android:name="com.application.practices.bottomNavigationOne.BottomNavOne"/>
+        <activity android:name="com.application.practices.sha_256.Sha_256"/>
+        <activity android:name="com.application.practices.xml_pdf.XmlToPdf"/>
+        <activity android:name="com.application.practices.databinding_Sqlite.addUser.AddUserDetailsActivity"/>
+        <activity android:name="com.application.practices.xlsExport.XlsExportActivity"/>
 
     </application>
 
