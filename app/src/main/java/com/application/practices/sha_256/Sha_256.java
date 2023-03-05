@@ -6,7 +6,8 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.application.practice.databinding.Sha256LayoutBinding;
+
+import com.application.practices.databinding.Sha256LayoutBinding;
 
 import java.security.MessageDigest;
 

@@ -31,6 +31,7 @@
         <activity android:name="com.application.practices.xml_pdf.XmlToPdf"/>
         <activity android:name="com.application.practices.databinding_Sqlite.addUser.AddUserDetailsActivity"/>
         <activity android:name="com.application.practices.xlsExport.XlsExportActivity"/>
+        <activity android:name=".UiDemo"/>
 
     </application>
 

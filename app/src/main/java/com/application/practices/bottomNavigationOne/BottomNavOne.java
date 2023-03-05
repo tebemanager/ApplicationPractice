@@ -6,7 +6,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.application.practice.databinding.BottomNavOneBinding;
+import com.application.practices.databinding.BottomNavOneBinding;
 
 /**
  * Created by Charles Raj I on 07/05/22.

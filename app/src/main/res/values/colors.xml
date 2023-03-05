@@ -11,5 +11,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blues_white">#FCFCFD</color>
     <color name="red">#F44336</color>
-    <color name="green">#4CAF50</color>
+    <color name="green">#CAD8CB</color>
+
+
+    <color name="chocolate_color">#978B6D</color>
+    <color name="dark_blur">#1A2035</color>
+    <color name="dark_some_bg">#339D8686</color>
+    <color name="dark_bar_bg">#75AAB0C3</color>
 </resources>

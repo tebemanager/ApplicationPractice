@@ -5,7 +5,8 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.application.practice.databinding.XlsExportActivityBinding;
+
+import com.application.practices.databinding.XlsExportActivityBinding;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;

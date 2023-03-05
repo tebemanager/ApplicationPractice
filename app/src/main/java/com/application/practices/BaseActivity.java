@@ -66,5 +66,10 @@ public class BaseActivity extends AppCompatActivity {
             startActivity(xlsIntent);
         });
 
+        baseActivityBinding.uiDemo.setOnClickListener(view -> {
+            Intent uiIntent = new Intent(activity, UiDemo.class);
+            startActivity(uiIntent);
+        });
+
     }
 }
